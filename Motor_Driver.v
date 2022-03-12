@@ -27,7 +27,7 @@ module Motor_Driver(
 				RIGHT   = 4'b0010,
 				P_LEFT  = 4'b1001,
 				P_RIGHT = 4'b0110,
-				SPEED   = 1666666;
+				SPEED   = 1666666; //100% PWM
 
 	always @ (posedge clk) begin
 
