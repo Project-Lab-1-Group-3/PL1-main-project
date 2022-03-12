@@ -14,8 +14,6 @@ module Motor_Driver(
 	reg [7:0] JA_temp; 
 	reg [6:0] seg_temp;
 	reg [1:0] JC_old;
-//	reg [16:0] counter1000 = 0; 	//for the 1000 Hz signal
-//	reg [18:0] counter300 = 0;  	//for the 300 Hz signal
 	reg [20:0] counter60 = 0;   	//for the motors
 	reg [10:0] pulse_counter0, pulse_counter1, pulse_counter2, pulse_counter3;	//Counts number of pulses per 100 ms
 	reg [23:0] pulse_timer = 0; 	//10 Hz
