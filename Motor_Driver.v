@@ -108,10 +108,10 @@ module Motor_Driver(
 		if (JC != 2'b11 && JC_old != 3'b11) stop = 1; 
 	end
 	
-    //Assigning outputs
-    assign led[3:0] = JB[7:4];		//LEDs are used for debugging
-    assign led[5:4] = JC[1:0];
-    assign led[6] = stop;
+    	//Assigning outputs
+    	assign led[3:0] = JB[7:4];	//LEDs are used for debugging
+    	assign led[5:4] = JC[1:0];
+    	assign led[6] = stop;
 	assign an = 4'b1110; 		//only the first digit of the seven segment display is used for now
 	assign dp = 1;			//decimal point is always off
 	assign JA = JA_temp;		//temp registers are used in the procedural code and assigned to outputs
